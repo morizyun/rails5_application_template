@@ -180,7 +180,7 @@ insert_into_file 'config/environments/production.rb',%q{
 }, after: 'config.active_record.dump_schema_after_migration = false'
 
 # set Japanese locale
-get 'https://raw.github.com/svenfuchs/rails-i18n/master/rails/locale/ja.yml', 'config/locales/ja.yml'
+get 'https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/ja.yml', 'config/locales/ja.yml'
 
 # erb => haml
 Bundler.with_clean_env do
