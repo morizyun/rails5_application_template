@@ -43,12 +43,11 @@ gem 'kaminari'
 # Process Management
 gem 'foreman'
 
-# Presenter Layer Helper
-gem 'cells'
-gem 'cells-haml'
-
 # Configuration using ENV
 gem 'dotenv-rails'
+
+# Annotate schema and routes info
+gem 'annotate'
 
 # ============================
 # Environment Group
