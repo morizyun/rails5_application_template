@@ -213,6 +213,10 @@ get 'https://raw.github.com/morizyun/rails5_application_template/master/config/p
 # Procfile
 run "echo 'web: bundle exec puma -C config/puma.rb' > Procfile"
 
+# Annotate (Generating rake task)
+# ----------------------------------------------------------------
+run 'bundle exec rails g annotate:install'
+
 # Error Notification
 # ----------------------------------------------------------------
 if yes?('Do you use Airbrake/Errbit? [yes or ELSE]')

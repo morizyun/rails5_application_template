@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   TargetRubyVersion: 2.4
   Exclude:
@@ -15,22 +17,151 @@ AllCops:
 Rails:
   Enabled: true
 
-Style/AccessModifierIndentation:
+Layout/AccessModifierIndentation:
+  Enabled: false
+
+Layout/AlignArray:
+  Enabled: false
+
+Layout/AlignHash:
+  Enabled: false
+
+Layout/AlignParameters:
+  Enabled: false
+
+Layout/BlockEndNewline:
+  Enabled: false
+
+Layout/CaseIndentation:
+  Enabled: false
+
+Layout/CommentIndentation:
+  Enabled: false
+
+Layout/DotPosition:
+  Enabled: false
+
+Layout/ElseAlignment:
+  Enabled: false
+
+Layout/EmptyLineBetweenDefs:
+  Enabled: false
+
+Layout/EmptyLines:
+  Enabled: false
+
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: false
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: false
+
+Layout/EndOfLine:
+  Enabled: false
+
+Layout/FirstParameterIndentation:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  Enabled: false
+
+Layout/IndentationWidth:
+  Enabled: false
+
+Layout/IndentArray:
+  Enabled: false
+
+Layout/IndentHash:
+  Enabled: false
+
+Layout/LeadingCommentSpace:
+  Enabled: false
+
+Layout/MultilineBlockLayout:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/SpaceAfterColon:
+  Enabled: false
+
+Layout/SpaceAfterComma:
+  Enabled: false
+
+Layout/SpaceAroundKeyword:
+  Enabled: false
+
+Layout/SpaceAfterMethodName:
+  Enabled: false
+
+Layout/SpaceAfterNot:
+  Enabled: false
+
+Layout/SpaceAfterSemicolon:
+  Enabled: false
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: false
+
+Layout/SpaceBeforeComma:
+  Enabled: false
+
+Layout/SpaceBeforeComment:
+  Enabled: false
+
+Layout/SpaceBeforeSemicolon:
+  Enabled: false
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: false
+
+Layout/SpaceAroundBlockParameters:
+  Enabled: false
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: false
+
+Layout/SpaceAroundOperators:
+  Enabled: false
+
+Layout/SpaceAroundKeyword:
+  Enabled: false
+
+Layout/SpaceInsideBrackets:
+  Enabled: false
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Layout/SpaceInsideParens:
+  Enabled: false
+
+Layout/SpaceInsideRangeLiteral:
+  Enabled: false
+
+Layout/Tab:
+  Enabled: false
+
+Layout/TrailingBlankLines:
+  Enabled: false
+
+Layout/TrailingWhitespace:
   Enabled: false
 
 Style/AccessorMethodName:
   Enabled: false
 
 Style/Alias:
-  Enabled: false
-
-Style/AlignArray:
-  Enabled: false
-
-Style/AlignHash:
-  Enabled: false
-
-Style/AlignParameters:
   Enabled: false
 
 Style/AndOr:
@@ -58,16 +189,10 @@ Style/BarePercentLiterals:
 Style/BlockComments:
   Enabled: false
 
-Style/BlockEndNewline:
-  Enabled: false
-
 Style/BracesAroundHashParameters:
   Enabled: false
 
 Style/CaseEquality:
-  Enabled: false
-
-Style/CaseIndentation:
   Enabled: false
 
 Style/CharacterLiteral:
@@ -94,22 +219,16 @@ Style/ColonMethodCall:
 Style/CommentAnnotation:
   Enabled: false
 
-Style/CommentIndentation:
-  Enabled: false
-
 Style/ConstantName:
   Enabled: false
 
 Style/DefWithParentheses:
   Enabled: false
 
-Style/DeprecatedHashMethods:
+Style/PreferredHashMethods:
   Enabled: false
 
 Style/Documentation:
-  Enabled: false
-
-Style/DotPosition:
   Enabled: false
 
 Style/DoubleNegation:
@@ -118,31 +237,7 @@ Style/DoubleNegation:
 Style/EachWithObject:
   Enabled: false
 
-Style/ElseAlignment:
-  Enabled: false
-
 Style/EmptyElse:
-  Enabled: false
-
-Style/EmptyLineBetweenDefs:
-  Enabled: false
-
-Style/EmptyLines:
-  Enabled: false
-
-Style/EmptyLinesAroundAccessModifier:
-  Enabled: false
-
-Style/EmptyLinesAroundBlockBody:
-  Enabled: false
-
-Style/EmptyLinesAroundClassBody:
-  Enabled: false
-
-Style/EmptyLinesAroundModuleBody:
-  Enabled: false
-
-Style/EmptyLinesAroundMethodBody:
   Enabled: false
 
 Style/EmptyLiteral:
@@ -151,16 +246,10 @@ Style/EmptyLiteral:
 Style/EndBlock:
   Enabled: false
 
-Style/EndOfLine:
-  Enabled: false
-
 Style/EvenOdd:
   Enabled: false
 
 Style/FileName:
-  Enabled: false
-
-Style/FirstParameterIndentation:
   Enabled: false
 
 Style/FlipFlop:
@@ -187,18 +276,6 @@ Style/IfUnlessModifier:
 Style/IfWithSemicolon:
   Enabled: false
 
-Style/IndentationConsistency:
-  Enabled: false
-
-Style/IndentationWidth:
-  Enabled: false
-
-Style/IndentArray:
-  Enabled: false
-
-Style/IndentHash:
-  Enabled: false
-
 Style/InfiniteLoop:
   Enabled: false
 
@@ -206,9 +283,6 @@ Style/Lambda:
   Enabled: false
 
 Style/LambdaCall:
-  Enabled: false
-
-Style/LeadingCommentSpace:
   Enabled: false
 
 Style/LineEndConcatenation:
@@ -229,13 +303,7 @@ Style/ModuleFunction:
 Style/MultilineBlockChain:
   Enabled: false
 
-Style/MultilineBlockLayout:
-  Enabled: false
-
 Style/MultilineIfThen:
-  Enabled: false
-
-Style/MultilineOperationIndentation:
   Enabled: false
 
 Style/MultilineTernaryOperator:
@@ -325,63 +393,6 @@ Style/SingleLineBlockParams:
 Style/SingleLineMethods:
   Enabled: false
 
-Style/SpaceAfterColon:
-  Enabled: false
-
-Style/SpaceAfterComma:
-  Enabled: false
-
-Style/SpaceAroundKeyword:
-  Enabled: false
-
-Style/SpaceAfterMethodName:
-  Enabled: false
-
-Style/SpaceAfterNot:
-  Enabled: false
-
-Style/SpaceAfterSemicolon:
-  Enabled: false
-
-Style/SpaceBeforeBlockBraces:
-  Enabled: false
-
-Style/SpaceBeforeComma:
-  Enabled: false
-
-Style/SpaceBeforeComment:
-  Enabled: false
-
-Style/SpaceBeforeSemicolon:
-  Enabled: false
-
-Style/SpaceInsideBlockBraces:
-  Enabled: false
-
-Style/SpaceAroundBlockParameters:
-  Enabled: false
-
-Style/SpaceAroundEqualsInParameterDefault:
-  Enabled: false
-
-Style/SpaceAroundOperators:
-  Enabled: false
-
-Style/SpaceAroundKeyword:
-  Enabled: false
-
-Style/SpaceInsideBrackets:
-  Enabled: false
-
-Style/SpaceInsideHashLiteralBraces:
-  Enabled: false
-
-Style/SpaceInsideParens:
-  Enabled: false
-
-Style/SpaceInsideRangeLiteral:
-  Enabled: false
-
 Style/SpecialGlobalVars:
   Enabled: false
 
@@ -397,16 +408,7 @@ Style/StructInheritance:
 Style/SymbolProc:
   Enabled: false
 
-Style/Tab:
-  Enabled: false
-
-Style/TrailingBlankLines:
-  Enabled: false
-
 Style/TrailingCommaInLiteral:
-  Enabled: false
-
-Style/TrailingWhitespace:
   Enabled: false
 
 Style/TrivialAccessors:

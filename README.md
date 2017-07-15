@@ -30,8 +30,8 @@ $ rbenv install 2.4.1
 ### Install latest Rails gem
 
 ```
-# Set to use rails latest version(e.g. 5.1)
-$ gem install rails -v 5.1
+# Set to use rails latest version(e.g. 5.1.2)
+$ gem install rails -v 5.1.2
 ```
 
 ## Execution command
@@ -40,10 +40,10 @@ Execute following commands:
 
 ```
 # if you want to use PostgreSQL, please execute following command;
-$ rails _5.1_ new test_app --database=postgresql -T --skip-bundle -m https://raw.githubusercontent.com/morizyun/rails5_application_template/master/app_template.rb
+$ rails _5.1.2_ new test_app --database=postgresql -T --skip-bundle -m https://raw.githubusercontent.com/morizyun/rails5_application_template/master/app_template.rb
 
 # if you want to use MySQL, please execute following command;
-$ rails _5.1_ new test_app --database=mysql -T --skip-bundle -m https://raw.githubusercontent.com/morizyun/rails5_application_template/master/app_template.rb
+$ rails _5.1.2_ new test_app --database=mysql -T --skip-bundle -m https://raw.githubusercontent.com/morizyun/rails5_application_template/master/app_template.rb
 ```
 
 ## Detail explanation
