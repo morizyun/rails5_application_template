@@ -124,6 +124,9 @@ group :test do
 
   # This gem brings back assigns to your controller tests
   gem 'rails-controller-testing'
+
+  # Coverage
+  gem 'simplecov', require: false
 end
 CODE
 
@@ -240,6 +243,12 @@ Bundler.with_clean_env do
 end
 
 run "echo '--color -f d' > .rspec"
+
+insert_into_file 'spec/rails_helper.rb',%(
+# Coverage
+require 'simplecov'
+SimpleCov.start 'rails'
+), after: "require 'rspec/rails'"
 
 insert_into_file 'spec/rails_helper.rb',%(
   config.order = 'random'
